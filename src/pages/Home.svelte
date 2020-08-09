@@ -1,0 +1,78 @@
+<script>
+
+</script>
+
+<style>
+  .home-container {
+    margin: auto;
+    max-width: 70vw;
+    padding-top: 1rem;
+  }
+</style>
+
+<div class="home-container">
+  <!-- three cards with images -->
+  <!-- card 1 -->
+  <div
+    class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s
+    uk-margin"
+    uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+      <img src="./images/farming.jpg" alt="Farming" uk-cover />
+      <canvas width="450" height="250" />
+    </div>
+    <div>
+      <div class="uk-card-body">
+        <h3 class="uk-card-title">Our Firm</h3>
+        <p>
+          Duncan, Walker, Schenker & Daake, P.C., L.L.O. represents individuals,
+          families, farmers, banks, and small businesses. With our extensive
+          experience, our practice has developed into a comprehensive law firm
+          handling an assortment of legal issues.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- card 2 -->
+  <div
+    class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s
+    uk-margin"
+    uk-grid>
+    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+      <img src="./images/ladyJustice.jpg" alt="" uk-cover />
+      <canvas width="450" height="250" />
+    </div>
+    <div>
+      <div class="uk-card-body">
+        <h3 class="uk-card-title">A Client First Approach</h3>
+        <p>
+          Our background in law allows us to meet the often complex and
+          interdisciplinary needs of our local citizens. Our clients' interests
+          are at the heart of everything we do. We place a strong emphasis on
+          professionalism and serving the needs of the residents of South
+          Central Nebraska.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- card 3 -->
+  <div
+    class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s
+    uk-margin"
+    uk-grid>
+    <div class="uk-card-media-left uk-cover-container">
+      <img src="./images/mainStreet.jpg" alt="Main Street" uk-cover />
+      <canvas width="450" height="250" />
+    </div>
+    <div>
+      <div class="uk-card-body">
+        <h3 class="uk-card-title">Here When You Need Us</h3>
+        <p>
+          We are grateful for our communities, our clients, and friends and
+          welcome the opportunity to assist you with your particular legal
+          situation. Feel free to stop by or call to discuss your legal needs.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
