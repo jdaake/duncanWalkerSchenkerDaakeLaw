@@ -15,11 +15,11 @@
 
 {#if !mobile}
   <!-- Desktop Nav -->
-  <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-center">
       <a class="uk-navbar-item uk-logo" href="#">Logo</a>
       <ul class="uk-navbar-nav">
-        <li class="">
+        <li class="uk-active">
           <a href="#">Home</a>
         </li>
         <li>
@@ -30,6 +30,22 @@
         </li>
         <li>
           <a href="#">Locations</a>
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li>
+                <a href="#">Franklin, NE</a>
+              </li>
+              <li>
+                <a href="#">Alma, NE</a>
+              </li>
+              <li>
+                <a href="#">Oxford, NE</a>
+              </li>
+              <li>
+                <a href="#">Hildreth, NE</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li>
           <a href="#">Contact</a>

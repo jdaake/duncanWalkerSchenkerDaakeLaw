@@ -1,13 +1,19 @@
 <style>
+  footer {
+    position: sticky;
+    background-color: rgba(222, 220, 220, 0.3);
+    padding-top: 0.7rem;
+  }
   p {
     font-size: 0.7rem;
-    color: lightslategray;
   }
 
   .footer-container {
     display: flex;
     margin: 0rem 1rem;
     padding: 0rem 1rem;
+    max-width: 80vw;
+    margin: auto;
   }
 </style>
 

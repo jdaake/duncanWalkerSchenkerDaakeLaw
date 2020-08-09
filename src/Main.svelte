@@ -1,1 +1,7 @@
-<main>This is the main body</main>
+<script>
+  import Home from "./pages/Home.svelte";
+</script>
+
+<main>
+  <Home />
+</main>

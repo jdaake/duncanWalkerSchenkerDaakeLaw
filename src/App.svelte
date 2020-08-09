@@ -5,9 +5,13 @@
   import SideNav from "./SideNav.svelte";
 </script>
 
+<style>
+
+</style>
+
 <div class="grid">
   <Nav />
   <Main />
-  <SideNav />
+  <!-- <SideNav /> -->
   <Footer />
 </div>

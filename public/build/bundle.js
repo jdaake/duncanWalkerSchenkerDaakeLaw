@@ -330,10 +330,10 @@ var app = (function () {
     // (16:0) {#if !mobile}
     function create_if_block_1(ctx) {
     	let nav;
-    	let div;
+    	let div1;
     	let a0;
     	let t1;
-    	let ul;
+    	let ul1;
     	let li0;
     	let a1;
     	let t3;
@@ -343,20 +343,34 @@ var app = (function () {
     	let li2;
     	let a3;
     	let t7;
-    	let li3;
+    	let li7;
     	let a4;
     	let t9;
-    	let li4;
+    	let div0;
+    	let ul0;
+    	let li3;
     	let a5;
+    	let t11;
+    	let li4;
+    	let a6;
+    	let t13;
+    	let li5;
+    	let a7;
+    	let t15;
+    	let li6;
+    	let a8;
+    	let t17;
+    	let li8;
+    	let a9;
 
     	const block = {
     		c: function create() {
     			nav = element("nav");
-    			div = element("div");
+    			div1 = element("div");
     			a0 = element("a");
     			a0.textContent = "Logo";
     			t1 = space();
-    			ul = element("ul");
+    			ul1 = element("ul");
     			li0 = element("li");
     			a1 = element("a");
     			a1.textContent = "Home";
@@ -369,60 +383,108 @@ var app = (function () {
     			a3 = element("a");
     			a3.textContent = "Areas of Practice";
     			t7 = space();
-    			li3 = element("li");
+    			li7 = element("li");
     			a4 = element("a");
     			a4.textContent = "Locations";
     			t9 = space();
-    			li4 = element("li");
+    			div0 = element("div");
+    			ul0 = element("ul");
+    			li3 = element("li");
     			a5 = element("a");
-    			a5.textContent = "Contact";
+    			a5.textContent = "Franklin, NE";
+    			t11 = space();
+    			li4 = element("li");
+    			a6 = element("a");
+    			a6.textContent = "Alma, NE";
+    			t13 = space();
+    			li5 = element("li");
+    			a7 = element("a");
+    			a7.textContent = "Oxford, NE";
+    			t15 = space();
+    			li6 = element("li");
+    			a8 = element("a");
+    			a8.textContent = "Hildreth, NE";
+    			t17 = space();
+    			li8 = element("li");
+    			a9 = element("a");
+    			a9.textContent = "Contact";
     			attr_dev(a0, "class", "uk-navbar-item uk-logo");
     			attr_dev(a0, "href", "#");
-    			add_location(a0, file, 19, 6, 424);
+    			add_location(a0, file, 19, 6, 402);
     			attr_dev(a1, "href", "#");
-    			add_location(a1, file, 22, 10, 541);
-    			attr_dev(li0, "class", "");
-    			add_location(li0, file, 21, 8, 517);
+    			add_location(a1, file, 22, 10, 528);
+    			attr_dev(li0, "class", "uk-active");
+    			add_location(li0, file, 21, 8, 495);
     			attr_dev(a2, "href", "#");
-    			add_location(a2, file, 25, 10, 599);
-    			add_location(li1, file, 24, 8, 584);
+    			add_location(a2, file, 25, 10, 586);
+    			add_location(li1, file, 24, 8, 571);
     			attr_dev(a3, "href", "#");
-    			add_location(a3, file, 28, 10, 658);
-    			add_location(li2, file, 27, 8, 643);
+    			add_location(a3, file, 28, 10, 645);
+    			add_location(li2, file, 27, 8, 630);
     			attr_dev(a4, "href", "#");
-    			add_location(a4, file, 31, 10, 729);
-    			add_location(li3, file, 30, 8, 714);
+    			add_location(a4, file, 31, 10, 716);
     			attr_dev(a5, "href", "#");
-    			add_location(a5, file, 34, 10, 792);
-    			add_location(li4, file, 33, 8, 777);
-    			attr_dev(ul, "class", "uk-navbar-nav");
-    			add_location(ul, file, 20, 6, 482);
-    			attr_dev(div, "class", "uk-navbar-center");
-    			add_location(div, file, 18, 4, 387);
-    			attr_dev(nav, "class", "uk-navbar-container uk-navbar-transparent");
+    			add_location(a5, file, 35, 16, 875);
+    			add_location(li3, file, 34, 14, 854);
+    			attr_dev(a6, "href", "#");
+    			add_location(a6, file, 38, 16, 959);
+    			add_location(li4, file, 37, 14, 938);
+    			attr_dev(a7, "href", "#");
+    			add_location(a7, file, 41, 16, 1039);
+    			add_location(li5, file, 40, 14, 1018);
+    			attr_dev(a8, "href", "#");
+    			add_location(a8, file, 44, 16, 1121);
+    			add_location(li6, file, 43, 14, 1100);
+    			attr_dev(ul0, "class", "uk-nav uk-navbar-dropdown-nav");
+    			add_location(ul0, file, 33, 12, 797);
+    			attr_dev(div0, "class", "uk-navbar-dropdown");
+    			add_location(div0, file, 32, 10, 752);
+    			add_location(li7, file, 30, 8, 701);
+    			attr_dev(a9, "href", "#");
+    			add_location(a9, file, 50, 10, 1242);
+    			add_location(li8, file, 49, 8, 1227);
+    			attr_dev(ul1, "class", "uk-navbar-nav");
+    			add_location(ul1, file, 20, 6, 460);
+    			attr_dev(div1, "class", "uk-navbar-center");
+    			add_location(div1, file, 18, 4, 365);
+    			attr_dev(nav, "class", "uk-navbar-container");
     			attr_dev(nav, "uk-navbar", "");
     			add_location(nav, file, 17, 2, 317);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, nav, anchor);
-    			append_dev(nav, div);
-    			append_dev(div, a0);
-    			append_dev(div, t1);
-    			append_dev(div, ul);
-    			append_dev(ul, li0);
+    			append_dev(nav, div1);
+    			append_dev(div1, a0);
+    			append_dev(div1, t1);
+    			append_dev(div1, ul1);
+    			append_dev(ul1, li0);
     			append_dev(li0, a1);
-    			append_dev(ul, t3);
-    			append_dev(ul, li1);
+    			append_dev(ul1, t3);
+    			append_dev(ul1, li1);
     			append_dev(li1, a2);
-    			append_dev(ul, t5);
-    			append_dev(ul, li2);
+    			append_dev(ul1, t5);
+    			append_dev(ul1, li2);
     			append_dev(li2, a3);
-    			append_dev(ul, t7);
-    			append_dev(ul, li3);
-    			append_dev(li3, a4);
-    			append_dev(ul, t9);
-    			append_dev(ul, li4);
-    			append_dev(li4, a5);
+    			append_dev(ul1, t7);
+    			append_dev(ul1, li7);
+    			append_dev(li7, a4);
+    			append_dev(li7, t9);
+    			append_dev(li7, div0);
+    			append_dev(div0, ul0);
+    			append_dev(ul0, li3);
+    			append_dev(li3, a5);
+    			append_dev(ul0, t11);
+    			append_dev(ul0, li4);
+    			append_dev(li4, a6);
+    			append_dev(ul0, t13);
+    			append_dev(ul0, li5);
+    			append_dev(li5, a7);
+    			append_dev(ul0, t15);
+    			append_dev(ul0, li6);
+    			append_dev(li6, a8);
+    			append_dev(ul1, t17);
+    			append_dev(ul1, li8);
+    			append_dev(li8, a9);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(nav);
@@ -440,7 +502,7 @@ var app = (function () {
     	return block;
     }
 
-    // (43:0) {#if mobile}
+    // (59:0) {#if mobile}
     function create_if_block(ctx) {
     	let nav;
     	let div1;
@@ -500,37 +562,37 @@ var app = (function () {
     			a5 = element("a");
     			a5.textContent = "Contact";
     			attr_dev(span0, "uk-navbar-toggle-icon", "");
-    			add_location(span0, file, 47, 10, 1058);
+    			add_location(span0, file, 63, 10, 1508);
     			attr_dev(span1, "class", "uk-margin-small-left");
-    			add_location(span1, file, 48, 10, 1099);
+    			add_location(span1, file, 64, 10, 1549);
     			attr_dev(a0, "class", "uk-navbar-toggle");
     			attr_dev(a0, "href", "#");
-    			add_location(a0, file, 46, 8, 1010);
+    			add_location(a0, file, 62, 8, 1460);
     			attr_dev(a1, "href", "#");
-    			add_location(a1, file, 53, 14, 1302);
+    			add_location(a1, file, 69, 14, 1752);
     			attr_dev(li0, "class", "uk-active");
-    			add_location(li0, file, 52, 12, 1265);
+    			add_location(li0, file, 68, 12, 1715);
     			attr_dev(a2, "href", "#");
-    			add_location(a2, file, 56, 14, 1372);
-    			add_location(li1, file, 55, 12, 1353);
+    			add_location(a2, file, 72, 14, 1822);
+    			add_location(li1, file, 71, 12, 1803);
     			attr_dev(a3, "href", "#");
-    			add_location(a3, file, 59, 14, 1443);
-    			add_location(li2, file, 58, 12, 1424);
+    			add_location(a3, file, 75, 14, 1893);
+    			add_location(li2, file, 74, 12, 1874);
     			attr_dev(a4, "href", "#");
-    			add_location(a4, file, 62, 14, 1526);
-    			add_location(li3, file, 61, 12, 1507);
+    			add_location(a4, file, 78, 14, 1976);
+    			add_location(li3, file, 77, 12, 1957);
     			attr_dev(a5, "href", "#");
-    			add_location(a5, file, 65, 14, 1601);
-    			add_location(li4, file, 64, 12, 1582);
+    			add_location(a5, file, 81, 14, 2051);
+    			add_location(li4, file, 80, 12, 2032);
     			attr_dev(ul, "class", "uk-nav uk-navbar-dropdown-nav");
-    			add_location(ul, file, 51, 10, 1210);
+    			add_location(ul, file, 67, 10, 1660);
     			attr_dev(div0, "class", "uk-navbar-dropdown");
-    			add_location(div0, file, 50, 8, 1167);
-    			add_location(li5, file, 45, 6, 997);
+    			add_location(div0, file, 66, 8, 1617);
+    			add_location(li5, file, 61, 6, 1447);
     			attr_dev(div1, "class", "uk-navbar-left");
-    			add_location(div1, file, 44, 4, 962);
+    			add_location(div1, file, 60, 4, 1412);
     			attr_dev(nav, "class", "uk-navbar uk-navbar-container uk-margin");
-    			add_location(nav, file, 43, 2, 904);
+    			add_location(nav, file, 59, 2, 1354);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, nav, anchor);
@@ -567,7 +629,7 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(43:0) {#if mobile}",
+    		source: "(59:0) {#if mobile}",
     		ctx
     	});
 
@@ -776,11 +838,12 @@ var app = (function () {
     			div = element("div");
     			p = element("p");
     			p.textContent = "* Information on this website is general in nature and should not be\n      considered legal advice or applicable to a specific factual situation. The\n      firm's practice may be limited to the State of Nebraska. Sending\n      communication through this website does not create an attorney-client\n      relationship and information might not be kept confidential or privileged.\n      Sending information to the firm will not create a conflict for the firm in\n      subsequent representations unless the firm has agreed to establish an\n      attorney-client relationship with the sender.";
-    			attr_dev(p, "class", "svelte-fdd1y2");
-    			add_location(p, file$1, 15, 4, 217);
-    			attr_dev(div, "class", "footer-container svelte-fdd1y2");
-    			add_location(div, file$1, 14, 2, 182);
-    			add_location(footer, file$1, 13, 0, 171);
+    			attr_dev(p, "class", "svelte-152kx0r");
+    			add_location(p, file$1, 21, 4, 339);
+    			attr_dev(div, "class", "footer-container svelte-152kx0r");
+    			add_location(div, file$1, 20, 2, 304);
+    			attr_dev(footer, "class", "svelte-152kx0r");
+    			add_location(footer, file$1, 19, 0, 293);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -835,30 +898,198 @@ var app = (function () {
     	}
     }
 
-    /* src/Main.svelte generated by Svelte v3.24.1 */
+    /* src/pages/Home.svelte generated by Svelte v3.24.1 */
 
-    const file$2 = "src/Main.svelte";
+    const file$2 = "src/pages/Home.svelte";
 
     function create_fragment$2(ctx) {
-    	let main;
+    	let div12;
+    	let div3;
+    	let div0;
+    	let img0;
+    	let img0_src_value;
+    	let t0;
+    	let canvas0;
+    	let t1;
+    	let div2;
+    	let div1;
+    	let h30;
+    	let t3;
+    	let p0;
+    	let t5;
+    	let div7;
+    	let div4;
+    	let img1;
+    	let img1_src_value;
+    	let t6;
+    	let canvas1;
+    	let t7;
+    	let div6;
+    	let div5;
+    	let h31;
+    	let t9;
+    	let p1;
+    	let t11;
+    	let div11;
+    	let div8;
+    	let img2;
+    	let img2_src_value;
+    	let t12;
+    	let canvas2;
+    	let t13;
+    	let div10;
+    	let div9;
+    	let h32;
+    	let t15;
+    	let p2;
 
     	const block = {
     		c: function create() {
-    			main = element("main");
-    			main.textContent = "This is the main body";
-    			add_location(main, file$2, 0, 0, 0);
+    			div12 = element("div");
+    			div3 = element("div");
+    			div0 = element("div");
+    			img0 = element("img");
+    			t0 = space();
+    			canvas0 = element("canvas");
+    			t1 = space();
+    			div2 = element("div");
+    			div1 = element("div");
+    			h30 = element("h3");
+    			h30.textContent = "Our Firm";
+    			t3 = space();
+    			p0 = element("p");
+    			p0.textContent = "Duncan, Walker, Schenker & Daake, P.C., L.L.O. represents individuals,\n          families, farmers, banks, and small businesses. With our extensive\n          experience, our practice has developed into a comprehensive law firm\n          handling an assortment of legal issues.";
+    			t5 = space();
+    			div7 = element("div");
+    			div4 = element("div");
+    			img1 = element("img");
+    			t6 = space();
+    			canvas1 = element("canvas");
+    			t7 = space();
+    			div6 = element("div");
+    			div5 = element("div");
+    			h31 = element("h3");
+    			h31.textContent = "A Client First Approach";
+    			t9 = space();
+    			p1 = element("p");
+    			p1.textContent = "Our background in law allows us to meet the often complex and\n          interdisciplinary needs of our local citizens. Our clients' interests\n          are at the heart of everything we do. We place a strong emphasis on\n          professionalism and serving the needs of the residents of South\n          Central Nebraska.";
+    			t11 = space();
+    			div11 = element("div");
+    			div8 = element("div");
+    			img2 = element("img");
+    			t12 = space();
+    			canvas2 = element("canvas");
+    			t13 = space();
+    			div10 = element("div");
+    			div9 = element("div");
+    			h32 = element("h3");
+    			h32.textContent = "Here When You Need Us";
+    			t15 = space();
+    			p2 = element("p");
+    			p2.textContent = "We are grateful for our communities, our clients, and friends and\n          welcome the opportunity to assist you with your particular legal\n          situation. Feel free to stop by or call to discuss your legal needs.";
+    			if (img0.src !== (img0_src_value = "./images/farming.jpg")) attr_dev(img0, "src", img0_src_value);
+    			attr_dev(img0, "alt", "Farming");
+    			attr_dev(img0, "uk-cover", "");
+    			add_location(img0, file$2, 20, 6, 377);
+    			attr_dev(canvas0, "width", "450");
+    			attr_dev(canvas0, "height", "250");
+    			add_location(canvas0, file$2, 21, 6, 441);
+    			attr_dev(div0, "class", "uk-card-media-left uk-cover-container");
+    			add_location(div0, file$2, 19, 4, 319);
+    			attr_dev(h30, "class", "uk-card-title");
+    			add_location(h30, file$2, 25, 8, 539);
+    			add_location(p0, file$2, 26, 8, 587);
+    			attr_dev(div1, "class", "uk-card-body");
+    			add_location(div1, file$2, 24, 6, 504);
+    			add_location(div2, file$2, 23, 4, 492);
+    			attr_dev(div3, "class", "uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s\n    uk-margin");
+    			attr_dev(div3, "uk-grid", "");
+    			add_location(div3, file$2, 15, 2, 209);
+    			if (img1.src !== (img1_src_value = "./images/ladyJustice.jpg")) attr_dev(img1, "src", img1_src_value);
+    			attr_dev(img1, "alt", "");
+    			attr_dev(img1, "uk-cover", "");
+    			add_location(img1, file$2, 41, 6, 1128);
+    			attr_dev(canvas1, "width", "450");
+    			attr_dev(canvas1, "height", "250");
+    			add_location(canvas1, file$2, 42, 6, 1189);
+    			attr_dev(div4, "class", "uk-flex-last@s uk-card-media-right uk-cover-container");
+    			add_location(div4, file$2, 40, 4, 1054);
+    			attr_dev(h31, "class", "uk-card-title");
+    			add_location(h31, file$2, 46, 8, 1287);
+    			add_location(p1, file$2, 47, 8, 1350);
+    			attr_dev(div5, "class", "uk-card-body");
+    			add_location(div5, file$2, 45, 6, 1252);
+    			add_location(div6, file$2, 44, 4, 1240);
+    			attr_dev(div7, "class", "uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s\n    uk-margin");
+    			attr_dev(div7, "uk-grid", "");
+    			add_location(div7, file$2, 36, 2, 944);
+    			if (img2.src !== (img2_src_value = "./images/mainStreet.jpg")) attr_dev(img2, "src", img2_src_value);
+    			attr_dev(img2, "alt", "Main Street");
+    			attr_dev(img2, "uk-cover", "");
+    			add_location(img2, file$2, 63, 6, 1920);
+    			attr_dev(canvas2, "width", "450");
+    			attr_dev(canvas2, "height", "250");
+    			add_location(canvas2, file$2, 64, 6, 1991);
+    			attr_dev(div8, "class", "uk-card-media-left uk-cover-container");
+    			add_location(div8, file$2, 62, 4, 1862);
+    			attr_dev(h32, "class", "uk-card-title");
+    			add_location(h32, file$2, 68, 8, 2089);
+    			add_location(p2, file$2, 69, 8, 2150);
+    			attr_dev(div9, "class", "uk-card-body");
+    			add_location(div9, file$2, 67, 6, 2054);
+    			add_location(div10, file$2, 66, 4, 2042);
+    			attr_dev(div11, "class", "uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s\n    uk-margin");
+    			attr_dev(div11, "uk-grid", "");
+    			add_location(div11, file$2, 58, 2, 1752);
+    			attr_dev(div12, "class", "home-container svelte-1kdh9wh");
+    			add_location(div12, file$2, 12, 0, 125);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, main, anchor);
+    			insert_dev(target, div12, anchor);
+    			append_dev(div12, div3);
+    			append_dev(div3, div0);
+    			append_dev(div0, img0);
+    			append_dev(div0, t0);
+    			append_dev(div0, canvas0);
+    			append_dev(div3, t1);
+    			append_dev(div3, div2);
+    			append_dev(div2, div1);
+    			append_dev(div1, h30);
+    			append_dev(div1, t3);
+    			append_dev(div1, p0);
+    			append_dev(div12, t5);
+    			append_dev(div12, div7);
+    			append_dev(div7, div4);
+    			append_dev(div4, img1);
+    			append_dev(div4, t6);
+    			append_dev(div4, canvas1);
+    			append_dev(div7, t7);
+    			append_dev(div7, div6);
+    			append_dev(div6, div5);
+    			append_dev(div5, h31);
+    			append_dev(div5, t9);
+    			append_dev(div5, p1);
+    			append_dev(div12, t11);
+    			append_dev(div12, div11);
+    			append_dev(div11, div8);
+    			append_dev(div8, img2);
+    			append_dev(div8, t12);
+    			append_dev(div8, canvas2);
+    			append_dev(div11, t13);
+    			append_dev(div11, div10);
+    			append_dev(div10, div9);
+    			append_dev(div9, h32);
+    			append_dev(div9, t15);
+    			append_dev(div9, p2);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(main);
+    			if (detaching) detach_dev(div12);
     		}
     	};
 
@@ -877,33 +1108,110 @@ var app = (function () {
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Main> was created with unknown prop '${key}'`);
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Home> was created with unknown prop '${key}'`);
     	});
 
     	let { $$slots = {}, $$scope } = $$props;
-    	validate_slots("Main", $$slots, []);
+    	validate_slots("Home", $$slots, []);
     	return [];
     }
 
-    class Main extends SvelteComponentDev {
+    class Home extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
     		init(this, options, instance$2, create_fragment$2, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
-    			tagName: "Main",
+    			tagName: "Home",
     			options,
     			id: create_fragment$2.name
     		});
     	}
     }
 
-    /* src/SideNav.svelte generated by Svelte v3.24.1 */
-
-    const file$3 = "src/SideNav.svelte";
+    /* src/Main.svelte generated by Svelte v3.24.1 */
+    const file$3 = "src/Main.svelte";
 
     function create_fragment$3(ctx) {
+    	let main;
+    	let home;
+    	let current;
+    	home = new Home({ $$inline: true });
+
+    	const block = {
+    		c: function create() {
+    			main = element("main");
+    			create_component(home.$$.fragment);
+    			add_location(main, file$3, 4, 0, 62);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, main, anchor);
+    			mount_component(home, main, null);
+    			current = true;
+    		},
+    		p: noop,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(home.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(home.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(main);
+    			destroy_component(home);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$3.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$3($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Main> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("Main", $$slots, []);
+    	$$self.$capture_state = () => ({ Home });
+    	return [];
+    }
+
+    class Main extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$3, create_fragment$3, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Main",
+    			options,
+    			id: create_fragment$3.name
+    		});
+    	}
+    }
+
+    /* src/SideNav.svelte generated by Svelte v3.24.1 */
+
+    const file$4 = "src/SideNav.svelte";
+
+    function create_fragment$4(ctx) {
     	let aside;
     	let div1;
     	let div0;
@@ -971,31 +1279,31 @@ var app = (function () {
     			a.textContent = "dolor";
     			t17 = text("\n        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt\n        ut labore et dolore magna aliqua.");
     			attr_dev(h4, "class", "uk-card-title");
-    			add_location(h4, file$3, 25, 6, 458);
-    			add_location(li0, file$3, 27, 8, 533);
-    			add_location(hr0, file$3, 28, 8, 582);
-    			add_location(li1, file$3, 29, 8, 597);
-    			add_location(hr1, file$3, 30, 8, 642);
-    			add_location(li2, file$3, 31, 8, 657);
-    			add_location(hr2, file$3, 32, 8, 704);
-    			add_location(li3, file$3, 33, 8, 719);
+    			add_location(h4, file$4, 25, 6, 458);
+    			add_location(li0, file$4, 27, 8, 533);
+    			add_location(hr0, file$4, 28, 8, 582);
+    			add_location(li1, file$4, 29, 8, 597);
+    			add_location(hr1, file$4, 30, 8, 642);
+    			add_location(li2, file$4, 31, 8, 657);
+    			add_location(hr2, file$4, 32, 8, 704);
+    			add_location(li3, file$4, 33, 8, 719);
     			attr_dev(ul, "class", "uk-list");
-    			add_location(ul, file$3, 26, 6, 504);
+    			add_location(ul, file$4, 26, 6, 504);
     			attr_dev(div0, "class", "uk-card uk-card-default uk-card-body");
-    			add_location(div0, file$3, 24, 4, 401);
+    			add_location(div0, file$4, 24, 4, 401);
     			attr_dev(div1, "class", "contact-numbers svelte-1jdd7vo");
-    			add_location(div1, file$3, 23, 2, 367);
+    			add_location(div1, file$4, 23, 2, 367);
     			attr_dev(h3, "class", "uk-card-title");
-    			add_location(h3, file$3, 40, 6, 890);
+    			add_location(h3, file$4, 40, 6, 890);
     			attr_dev(a, "href", "#");
-    			add_location(a, file$3, 43, 8, 975);
-    			add_location(p, file$3, 41, 6, 943);
+    			add_location(a, file$4, 43, 8, 975);
+    			add_location(p, file$4, 41, 6, 943);
     			attr_dev(div2, "class", "uk-card uk-card-default uk-card-body");
-    			add_location(div2, file$3, 39, 4, 833);
+    			add_location(div2, file$4, 39, 4, 833);
     			attr_dev(div3, "class", "hours-of-operations svelte-1jdd7vo");
-    			add_location(div3, file$3, 38, 2, 795);
+    			add_location(div3, file$4, 38, 2, 795);
     			attr_dev(aside, "class", "aside-grid svelte-1jdd7vo");
-    			add_location(aside, file$3, 22, 0, 338);
+    			add_location(aside, file$4, 22, 0, 338);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1040,7 +1348,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$3.name,
+    		id: create_fragment$4.name,
     		type: "component",
     		source: "",
     		ctx
@@ -1049,7 +1357,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$3($$self, $$props) {
+    function instance$4($$self, $$props) {
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
@@ -1064,33 +1372,30 @@ var app = (function () {
     class SideNav extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$3, create_fragment$3, safe_not_equal, {});
+    		init(this, options, instance$4, create_fragment$4, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "SideNav",
     			options,
-    			id: create_fragment$3.name
+    			id: create_fragment$4.name
     		});
     	}
     }
 
     /* src/App.svelte generated by Svelte v3.24.1 */
-    const file$4 = "src/App.svelte";
+    const file$5 = "src/App.svelte";
 
-    function create_fragment$4(ctx) {
+    function create_fragment$5(ctx) {
     	let div;
     	let nav;
     	let t0;
     	let main;
     	let t1;
-    	let sidenav;
-    	let t2;
     	let footer;
     	let current;
     	nav = new Nav({ $$inline: true });
     	main = new Main({ $$inline: true });
-    	sidenav = new SideNav({ $$inline: true });
     	footer = new Footer({ $$inline: true });
 
     	const block = {
@@ -1100,11 +1405,9 @@ var app = (function () {
     			t0 = space();
     			create_component(main.$$.fragment);
     			t1 = space();
-    			create_component(sidenav.$$.fragment);
-    			t2 = space();
     			create_component(footer.$$.fragment);
     			attr_dev(div, "class", "grid");
-    			add_location(div, file$4, 7, 0, 172);
+    			add_location(div, file$5, 11, 0, 191);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1115,8 +1418,6 @@ var app = (function () {
     			append_dev(div, t0);
     			mount_component(main, div, null);
     			append_dev(div, t1);
-    			mount_component(sidenav, div, null);
-    			append_dev(div, t2);
     			mount_component(footer, div, null);
     			current = true;
     		},
@@ -1125,14 +1426,12 @@ var app = (function () {
     			if (current) return;
     			transition_in(nav.$$.fragment, local);
     			transition_in(main.$$.fragment, local);
-    			transition_in(sidenav.$$.fragment, local);
     			transition_in(footer.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
     			transition_out(nav.$$.fragment, local);
     			transition_out(main.$$.fragment, local);
-    			transition_out(sidenav.$$.fragment, local);
     			transition_out(footer.$$.fragment, local);
     			current = false;
     		},
@@ -1140,14 +1439,13 @@ var app = (function () {
     			if (detaching) detach_dev(div);
     			destroy_component(nav);
     			destroy_component(main);
-    			destroy_component(sidenav);
     			destroy_component(footer);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$4.name,
+    		id: create_fragment$5.name,
     		type: "component",
     		source: "",
     		ctx
@@ -1156,7 +1454,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$4($$self, $$props, $$invalidate) {
+    function instance$5($$self, $$props, $$invalidate) {
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
@@ -1172,13 +1470,13 @@ var app = (function () {
     class App extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$4, create_fragment$4, safe_not_equal, {});
+    		init(this, options, instance$5, create_fragment$5, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "App",
     			options,
-    			id: create_fragment$4.name
+    			id: create_fragment$5.name
     		});
     	}
     }
