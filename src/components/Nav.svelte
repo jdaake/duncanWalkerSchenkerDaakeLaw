@@ -1,10 +1,52 @@
 <script>
   import { onMount } from "svelte";
   let mobile = false;
-  export let homeIsActive;
-  export let aboutIsActive;
-  export let practiceIsActive;
-  export let locationsIsActive;
+  let homeIsActive;
+  let aboutIsActive;
+  let practiceIsActive;
+  let locationsIsActive;
+
+  onMount(() => {
+    homeIsActive = true;
+    aboutIsActive = false;
+    practiceIsActive = false;
+    locationsIsActive = false;
+  });
+
+  function setActive(e) {
+    var target = e.target.innerText.toLowerCase();
+    switch (target) {
+      case "home":
+        homeIsActive = true;
+        aboutIsActive = false;
+        practiceIsActive = false;
+        locationsIsActive = false;
+        break;
+      case "about":
+        homeIsActive = false;
+        aboutIsActive = true;
+        practiceIsActive = false;
+        locationsIsActive = false;
+        break;
+      case "areas of practice":
+        homeIsActive = false;
+        aboutIsActive = false;
+        practiceIsActive = true;
+        locationsIsActive = false;
+        break;
+      case "locations":
+        homeIsActive = false;
+        aboutIsActive = false;
+        practiceIsActive = false;
+        locationsIsActive = true;
+        break;
+      default:
+        homeIsActive = true;
+        aboutIsActive = false;
+        practiceIsActive = false;
+        locationsIsActive = false;
+    }
+  }
 </script>
 
 <style>
@@ -17,17 +59,17 @@
     <div class="uk-navbar-center">
       <a class="uk-navbar-item uk-logo" href="#">Logo</a>
       <ul class="uk-navbar-nav">
-        <li>
-          <a href="">Home</a>
+        <li class={homeIsActive ? 'uk-active' : ''}>
+          <a on:click={e => setActive(e)} href="">Home</a>
         </li>
-        <li>
-          <a href="about">About</a>
+        <li class={aboutIsActive ? 'uk-active' : ''}>
+          <a on:click={e => setActive(e)} href="about">About</a>
         </li>
-        <li>
-          <a href="practice">Areas of Practice</a>
+        <li class={practiceIsActive ? 'uk-active' : ''}>
+          <a on:click={e => setActive(e)} href="practice">Areas of Practice</a>
         </li>
-        <li>
-          <a href="locations">Locations</a>
+        <li class={locationsIsActive ? 'uk-active' : ''}>
+          <a on:click={e => setActive(e)} href="locations">Locations</a>
           <div class="uk-navbar-dropdown">
             <ul class="uk-nav uk-navbar-dropdown-nav">
               <li>
@@ -46,7 +88,7 @@
           </div>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="">Contact</a>
         </li>
       </ul>
     </div>
