@@ -50,14 +50,22 @@
 </script>
 
 <style>
-
+  nav {
+    border-bottom: 1px solid navy !important;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+  }
 </style>
 
 {#if !mobile}
   <!-- Desktop Nav -->
   <nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-center">
-      <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+      <a class="uk-navbar-item uk-logo" href="">Logo</a>
       <ul class="uk-navbar-nav">
         <li class={homeIsActive ? 'uk-active' : ''}>
           <a on:click={e => setActive(e)} href="">Home</a>
@@ -73,22 +81,22 @@
           <div class="uk-navbar-dropdown">
             <ul class="uk-nav uk-navbar-dropdown-nav">
               <li>
-                <a href="#">Franklin, NE</a>
+                <a href="locations">Franklin, NE</a>
               </li>
               <li>
-                <a href="#">Alma, NE</a>
+                <a href="locations">Alma, NE</a>
               </li>
               <li>
-                <a href="#">Oxford, NE</a>
+                <a href="locations">Oxford, NE</a>
               </li>
               <li>
-                <a href="#">Hildreth, NE</a>
+                <a href="locations">Hildreth, NE</a>
               </li>
             </ul>
           </div>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="contact">Contact</a>
         </li>
       </ul>
     </div>

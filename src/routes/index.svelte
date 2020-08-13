@@ -1,16 +1,17 @@
 <script>
-
+  import { fade } from "svelte/transition";
+  import Footer from "../components/Footer.svelte";
 </script>
 
 <style>
   .home-container {
     margin: auto;
-    max-width: 70vw;
+    max-width: 80vw;
     padding-top: 1rem;
   }
 </style>
 
-<div class="home-container">
+<div class="home-container" in:fade={{ duration: 400, delay: 200 }}>
   <!-- three cards with images -->
   <!-- card 1 -->
   <div
@@ -76,3 +77,4 @@
     </div>
   </div>
 </div>
+<Footer />

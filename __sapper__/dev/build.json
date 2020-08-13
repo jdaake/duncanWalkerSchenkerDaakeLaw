@@ -2,40 +2,48 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.e3682339.js"
+    "main": "client.814067c0.js"
   },
   "dependencies": {
     "../client.js": [],
     "index.svelte": [
-      "client.e3682339.js"
+      "client.814067c0.js",
+      "index.f3b020f0.js"
     ],
     "locations.svelte": [
-      "client.e3682339.js"
+      "client.814067c0.js"
     ],
     "practice.svelte": [
-      "client.e3682339.js"
+      "client.814067c0.js"
+    ],
+    "contact.svelte": [
+      "client.814067c0.js"
     ],
     "about.svelte": [
-      "client.e3682339.js"
+      "client.814067c0.js",
+      "index.f3b020f0.js"
     ],
     "../../node_modules/sapper/sapper-dev-client.js": []
   },
   "css": {
-    "main": "main.3760240529.css",
+    "main": "main.3234816434.css",
     "chunks": {
       "index.svelte": [
-        "index.28a151ea.css",
-        "client.e3682339.css"
+        "index.48c14551.css",
+        "client.814067c0.css"
       ],
       "locations.svelte": [
-        "client.e3682339.css"
+        "client.814067c0.css"
       ],
       "practice.svelte": [
-        "client.e3682339.css"
+        "client.814067c0.css"
+      ],
+      "contact.svelte": [
+        "client.814067c0.css"
       ],
       "about.svelte": [
-        "about.eaeb16f2.css",
-        "client.e3682339.css"
+        "about.18a6cd0e.css",
+        "client.814067c0.css"
       ]
     }
   }
