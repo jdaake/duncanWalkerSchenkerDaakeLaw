@@ -3,12 +3,14 @@
     background-color: rgba(222, 220, 220, 0.3);
     margin: 1rem 1rem;
     padding: 1rem 1rem;
-    max-width: 100vw;
+    width: 100%;
     margin: auto;
+    border-top: 1px solid navy;
   }
 
   footer > p {
     font-size: 0.7rem;
+    margin: 1rem 1rem 0 1rem;
   }
 </style>
 
