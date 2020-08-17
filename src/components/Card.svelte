@@ -1,9 +1,10 @@
 <script>
+  import ContactModal from "./ContactModal.svelte";
   export let name;
   export let image;
   export let phone;
   export let email;
-  export let bio;
+  export let modalName;
 </script>
 
 <style>
@@ -19,11 +20,7 @@
   .card-container {
     width: 25;
     display: inline-flexbox;
-    /* border: 1px solid rgba(0, 0, 0, 0.08); */
-    /* box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-      0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
-      0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-      0 100px 80px rgba(0, 0, 0, 0.07); */
+    border: 1px solid rgba(0, 0, 0, 0.08);
     justify-content: space-around;
     align-items: center;
     margin: 2rem;
@@ -47,21 +44,25 @@
     font-size: 1rem;
     font-family: "Fira Sans", sans-serif;
     padding: 1rem;
-    text-align: center;
+    text-align: left;
   }
   div > h4:hover {
-    color: #999999;
+    color: gold;
   }
 
   h4 {
     font-family: "Fira Sans", sans-serif;
     text-align: center;
   }
+
+  header {
+    cursor: pointer;
+  }
 </style>
 
 <section>
-  <div class="card-container uk-box-shadow-large">
-    <header class="image uk-inline">
+  <div class="card-container uk-box-shadow-medium">
+    <header class="image uk-inline" on:click>
       <img src={image} alt={name} />
       <div class="uk-overlay uk-overlay-primary uk-position-bottom">
         <h4>{name}</h4>
@@ -69,14 +70,21 @@
     </header>
     <div>
       <div class="details">
-        <div>Phone: {phone}</div>
-        <!-- <hr /> -->
         <div>
-          Email:
+          <span uk-icon="icon: receiver" />
+          {phone}
+        </div>
+        <div>
+          <span uk-icon="icon: mail" />
           <a href="mailto:{email}">{email}</a>
         </div>
-        <!-- <hr />
-       <div>About: {bio}</div> -->
+        <div>About: Placeholder text...</div>
+        <div>
+          <a href="" uk-icon="icon: linkedin" />
+          <a href="" uk-icon="icon: facebook" />
+          <a href="" uk-icon="icon: twitter" />
+          <a href="" uk-icon="icon: instagram" />
+        </div>
       </div>
     </div>
   </div>

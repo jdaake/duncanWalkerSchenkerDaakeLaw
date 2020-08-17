@@ -1,15 +1,36 @@
 <script>
+  import { onDestroy } from "svelte";
   import aboutData from "../stores/about-store";
   import { fade } from "svelte/transition";
   import Card from "../components/Card.svelte";
   import Footer from "../components/Footer.svelte";
   import ContactModal from "../components/ContactModal.svelte";
+  import navStore from "../stores/nav-store.js";
+  // let attorneys;
+  let pageIsActive;
 
-  let attorneys;
+  // const unsubscribeLawyer = aboutData.subscribe(lawyer => {
+  //   attorneys = lawyer;
+  // });
 
-  aboutData.subscribe(lawyer => {
-    attorneys = lawyer;
+  const unsubscribeNav = navStore.subscribe(activePage => {
+    pageIsActive = activePage;
   });
+
+  navStore.update(() => {
+    return { activePage: "about" };
+  });
+
+  onDestroy(() => {
+    if (unsubscribeNav) {
+      unsubscribeNav();
+    }
+  });
+
+  function showModal(modalName) {
+    console.log(modalName);
+    UIkit.modal(`#${modalName}`).show();
+  }
 </script>
 
 <style>
@@ -38,7 +59,10 @@
   }
 </style>
 
-<div class="header-container" in:fade={{ duration: 400, delay: 200 }}>
+<svelte:head>
+  <title>About</title>
+</svelte:head>
+<div class="header-container" in:fade={{ duration: 400, delay: 100 }}>
   <h2>Meet Our Experienced Legal Team</h2>
   <p>
     All of our lawyers and experienced professional staff are focused on
@@ -47,17 +71,19 @@
   </p>
 </div>
 <!-- card -->
-<section in:fade={{ duration: 800, delay: 500 }}>
-  {#each attorneys as attorney}
+<section in:fade={{ duration: 400, delay: 100 }}>
+  {#each $aboutData as attorney}
     <Card
       name={attorney.name}
       image={attorney.img}
       phone={attorney.phone}
       email={attorney.email}
-      bio={attorney.bio} />
+      on:click={showModal(attorney.modalName)} />
+    <ContactModal
+      id={attorney.modalName}
+      bio={attorney.bio}
+      name={attorney.name} />
   {/each}
 </section>
+
 <Footer />
-{#each attorneys as attorney}
-  <ContactModal name={attorney.name} />
-{/each}

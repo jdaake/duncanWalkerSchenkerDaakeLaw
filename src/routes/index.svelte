@@ -1,6 +1,23 @@
 <script>
   import { fade } from "svelte/transition";
+  import { onMount, onDestroy } from "svelte";
   import Footer from "../components/Footer.svelte";
+  import navStore from "../stores/nav-store.js";
+  let pageIsActive;
+
+  const unsubscribeNav = navStore.subscribe(activePage => {
+    pageIsActive = activePage;
+  });
+
+  navStore.update(() => {
+    return { activePage: "home" };
+  });
+
+  onDestroy(() => {
+    if (unsubscribeNav) {
+      unsubscribeNav();
+    }
+  });
 </script>
 
 <style>
@@ -11,7 +28,10 @@
   }
 </style>
 
-<div class="home-container" in:fade={{ duration: 400, delay: 200 }}>
+<svelte:head>
+  <title>Duncan, Walker, Schenker, & Daake</title>
+</svelte:head>
+<div class="home-container" in:fade={{ duration: 400, delay: 100 }}>
   <!-- three cards with images -->
   <!-- card 1 -->
   <div

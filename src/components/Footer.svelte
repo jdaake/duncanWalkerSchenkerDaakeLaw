@@ -1,9 +1,13 @@
+<script>
+  import { fade } from "svelte/transition";
+</script>
+
 <style>
   footer {
+    display: flex;
     background-color: rgba(222, 220, 220, 0.3);
-    margin: 1rem 1rem;
-    padding: 1rem 1rem;
-    width: 100%;
+    padding: 1rem 0rem;
+    width: 100vw;
     margin: auto;
     border-top: 1px solid navy;
   }
@@ -14,7 +18,7 @@
   }
 </style>
 
-<footer>
+<footer in:fade={{ duration: 400, delay: 200 }}>
   <p>
     * Information on this website is general in nature and should not be
     considered legal advice or applicable to a specific factual situation. The
