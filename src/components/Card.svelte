@@ -4,7 +4,11 @@
   export let image;
   export let phone;
   export let email;
-  export let modalName;
+  export let location;
+  export let linkedin;
+  export let facebook;
+  export let twitter;
+  export let instagram;
 </script>
 
 <style>
@@ -78,12 +82,20 @@
           <span uk-icon="icon: mail" />
           <a href="mailto:{email}">{email}</a>
         </div>
-        <div>About: Placeholder text...</div>
+        <div>Office Location: {location}</div>
         <div>
-          <a href="" uk-icon="icon: linkedin" />
-          <a href="" uk-icon="icon: facebook" />
-          <a href="" uk-icon="icon: twitter" />
-          <a href="" uk-icon="icon: instagram" />
+          {#if linkedin}
+            <a href={linkedin} target="_blank" uk-icon="icon: linkedin" />
+          {/if}
+          {#if facebook}
+            <a href={facebook} target="_blank" uk-icon="icon: facebook" />
+          {/if}
+          {#if twitter}
+            <a href={twitter} target="_blank" uk-icon="icon: twitter" />
+          {/if}
+          {#if instagram}
+            <a href={instagram} target="_blank" uk-icon="icon: instagram" />
+          {/if}
         </div>
       </div>
     </div>

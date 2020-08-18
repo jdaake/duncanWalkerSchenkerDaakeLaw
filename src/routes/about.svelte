@@ -78,6 +78,11 @@
       image={attorney.img}
       phone={attorney.phone}
       email={attorney.email}
+      location={attorney.location}
+      linkedin={attorney.linkedin}
+      facebook={attorney.facebook}
+      twitter={attorney.twitter}
+      instagram={attorney.instagram}
       on:click={showModal(attorney.modalName)} />
     <ContactModal
       id={attorney.modalName}
