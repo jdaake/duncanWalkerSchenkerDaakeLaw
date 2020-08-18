@@ -7,6 +7,11 @@ const aboutData = writable([
     email: 'jacyln@lawyer.com',
     img: './images/jaclyn.jpg',
     modalName: 'jaclyn',
+    location: 'Alma',
+    linkedin: 'https://www.linkedin.com/in/jaclyncannaday/',
+    twitter: '',
+    facebook: '',
+    instagram: '',
     bio:
       "She's from Texas. She married a clown who is also an attorney. She has foster kids. blah blah blah",
   },
@@ -16,6 +21,7 @@ const aboutData = writable([
     email: 'henry@lawyer.com',
     img: './images/henry.jpg',
     modalName: 'henry',
+    location: 'Hildreth',
     bio: 'some random information about the lawyer',
   },
   {
@@ -24,6 +30,7 @@ const aboutData = writable([
     email: 'doug@lawyer.com',
     img: './images/doug.jpg',
     modalName: 'doug',
+    location: 'Oxford',
     bio: 'some random information about the lawyer',
   },
   {
@@ -32,6 +39,7 @@ const aboutData = writable([
     email: 'pat@lawyer.com',
     img: './images/patrick.jpg',
     modalName: 'pat',
+    location: 'Franklin',
     bio: 'some random information about the lawyer',
   },
 ]);
