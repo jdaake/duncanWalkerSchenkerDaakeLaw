@@ -1,11 +1,11 @@
 <script>
   import { onDestroy } from "svelte";
+  import { fade } from "svelte/transition";
+  import LocationCard from "../components/LocationCard.svelte";
   import locationData from "../stores/locations-store.js";
   import navStore from "../stores/nav-store.js";
   import Footer from "../components/footer.svelte";
-
   let pageIsActive;
-
   const unsubscribeNav = navStore.subscribe(activePage => {
     pageIsActive = activePage;
   });
@@ -29,30 +29,27 @@
     justify-content: center;
     margin: auto;
     max-width: 90vw;
+    padding-top: 2rem;
   }
 </style>
 
 <svelte:head>
   <title>Locations</title>
 </svelte:head>
-<div class="locations-container">
+<div class="locations-container" in:fade={{ duration: 400, delay: 100 }}>
   {#each $locationData as location}
-    <div class="uk-child-width-1-2@m">
-      <div>
-        <div class="uk-card uk-card-default">
-          <div class="uk-card-media-top">
-            <img src={location.imgUrl} alt={location.officeLocation} />
-          </div>
-          <div class="uk-card-body">
-            <h3 class="uk-card-title">{location.officeLocation}</h3>
-            <p>{location.street}</p>
-            <p>{location.poBox}</p>
-            <p>{location.city}, {location.state} {location.zip}</p>
-            <p />
-          </div>
-        </div>
-      </div>
-    </div>
+    <LocationCard
+      officeLocation={location.officeLocation}
+      street={location.street}
+      poBox={location.poBox}
+      city={location.city}
+      state={location.state}
+      zip={location.zip}
+      phone={location.phone}
+      fax={location.fax}
+      email={location.email}
+      imgUrl={location.imgUrl}
+      mapUrl={location.mapUrl} />
   {/each}
 </div>
 <Footer />
