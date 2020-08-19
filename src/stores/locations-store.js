@@ -13,7 +13,6 @@ const locationData = writable([
     email: 'duncanjelkin@yahoo.com',
     imgUrl: './images/franklinOffice.jpg',
     mapUrl: 'http://g.co/maps/8zsb7',
-    directions: 'SE Corner of 15th and L St. in Downtown Franklin',
   },
   {
     officeLocation: 'Oxford',
@@ -27,8 +26,6 @@ const locationData = writable([
     email: 'ddwnlaw@yahoo.com',
     imgUrl: './images/oxfordOffice.jpg',
     mapUrl: 'http://g.co/maps/wxw83',
-    directions:
-      'West side of Ogden St. between Cornwall and S Railway Streets in Downtown Oxford',
   },
   {
     officeLocation: 'Alma',
@@ -42,8 +39,6 @@ const locationData = writable([
     email: 'duncanjelkin@yahoo.com',
     imgUrl: './images/almaOffice.jpg',
     mapUrl: 'http://g.co/maps/2hbxx',
-    directions:
-      'North side of Main St. between John and Jewell Streets in Downtown Alma',
   },
   {
     officeLocation: 'Hildreth',
@@ -57,8 +52,6 @@ const locationData = writable([
     email: 'ddjwlaw@yahoo.com',
     imgUrl: './images/hildrethOffice.jpg',
     mapUrl: 'http://g.co/maps/dw7ev',
-    directions:
-      'East side of Commercial Ave between Hubbard & S Railway Streets in Downtown Hildreth',
   },
 ]);
 

@@ -48,6 +48,7 @@
     width: 50vw;
     flex-direction: column;
     align-items: center;
+    padding-top: 2rem;
   }
   .header-container > h2 {
     margin-bottom: -0.5rem;

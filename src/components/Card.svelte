@@ -22,7 +22,7 @@
   }
 
   .card-container {
-    width: 25;
+    width: 25%;
     display: inline-flexbox;
     border: 1px solid rgba(0, 0, 0, 0.08);
     justify-content: space-around;
@@ -44,14 +44,13 @@
   }
 
   .details {
-    /* font-family: "Permanent Marker", cursive; */
     font-size: 1rem;
     font-family: "Fira Sans", sans-serif;
     padding: 1rem;
     text-align: left;
   }
   div > h4:hover {
-    color: gold;
+    color: rgb(170, 174, 214);
   }
 
   h4 {
@@ -83,7 +82,7 @@
           <a href="mailto:{email}">{email}</a>
         </div>
         <div>Office Location: {location}</div>
-        <div>
+        <!-- <div>
           {#if linkedin}
             <a href={linkedin} target="_blank" uk-icon="icon: linkedin" />
           {/if}
@@ -96,7 +95,7 @@
           {#if instagram}
             <a href={instagram} target="_blank" uk-icon="icon: instagram" />
           {/if}
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

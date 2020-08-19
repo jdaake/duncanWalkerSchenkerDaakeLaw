@@ -21,27 +21,43 @@
 
 <style>
   nav {
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
     display: flex !important;
     flex-flow: row wrap;
-    background-color: navy !important;
+    background-color: rgb(65, 107, 176) !important;
   }
   li.uk-active > a,
   a:hover {
-    color: gold !important;
+    color: rgb(170, 174, 214) !important;
   }
   a {
     color: white !important;
+    font-family: "Fira Sans", sans-serif !important;
+    font-size: 1.2rem;
+  }
+
+  .nav-logo {
+    max-width: 75px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+  }
+  @media (max-width: 991.98px) {
+  }
+
+  @media (max-width: 578.98px) {
   }
 </style>
 
 <nav class="uk-navbar-container" uk-navbar>
+  <a class="uk-navbar-item uk-logo" href="/">
+    <img class="nav-logo" src="./images/logos/dwsd-logo.jpg" alt="DSWD Logo" />
+  </a>
   <div class="uk-navbar-center uk-flex">
-    <a class="uk-navbar-item uk-logo" href="/">Logo</a>
     <ul class="uk-navbar-nav">
       <li class={pageIsActive.activePage == 'home' ? 'uk-active' : ''}>
         <a href="/">Home</a>
@@ -54,9 +70,6 @@
       </li>
       <li class={pageIsActive.activePage == 'locations' ? 'uk-active' : ''}>
         <a href="locations">Locations</a>
-      </li>
-      <li class={pageIsActive.activePage == 'contact' ? 'uk-active' : ''}>
-        <a href="contact">Contact</a>
       </li>
     </ul>
   </div>
