@@ -87,9 +87,10 @@
       on:click={showModal(attorney.modalName)} />
     <ContactModal
       id={attorney.modalName}
-      bio={attorney.bio}
-      name={attorney.name} />
+      bio1={attorney.bio1}
+      bio2={attorney.bio2}
+      bio3={attorney.bio3}
+      nameOnModal={attorney.nameOnModal}
+      linkedin={attorney.linkedin} />
   {/each}
 </section>
-
-<Footer />

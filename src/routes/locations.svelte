@@ -29,7 +29,7 @@
     justify-content: center;
     margin: auto;
     max-width: 90vw;
-    padding-top: 2rem;
+    padding: 1rem 0rem;
   }
 </style>
 
@@ -52,4 +52,3 @@
       mapUrl={location.mapUrl} />
   {/each}
 </div>
-<Footer />

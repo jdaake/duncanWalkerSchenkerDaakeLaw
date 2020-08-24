@@ -2,55 +2,46 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.dfb518de.js"
+    "main": "client.539d9b21.js"
   },
   "dependencies": {
     "../client.js": [],
     "index.svelte": [
-      "client.dfb518de.js"
+      "client.539d9b21.js"
     ],
     "locations.svelte": [
-      "client.dfb518de.js",
-      "footer.31e3338b.js"
+      "client.539d9b21.js",
+      "footer.6b97b37b.js"
     ],
     "practice.svelte": [
-      "client.dfb518de.js",
-      "footer.31e3338b.js"
-    ],
-    "contact.svelte": [
-      "client.dfb518de.js",
-      "footer.31e3338b.js"
+      "client.539d9b21.js",
+      "footer.6b97b37b.js"
     ],
     "about.svelte": [
-      "client.dfb518de.js"
+      "client.539d9b21.js"
     ],
     "../../node_modules/sapper/sapper-dev-client.js": []
   },
   "css": {
-    "main": "main.4161338589.css",
+    "main": "main.2184814827.css",
     "chunks": {
       "index.svelte": [
-        "index.d73709dc.css",
-        "client.dfb518de.css"
+        "index.9d328fa5.css",
+        "client.539d9b21.css"
       ],
       "locations.svelte": [
-        "locations.03657d2e.css",
-        "client.dfb518de.css",
-        "footer.31e3338b.css"
+        "locations.c82ff2ed.css",
+        "client.539d9b21.css",
+        "footer.6b97b37b.css"
       ],
       "practice.svelte": [
-        "practice.554b68c6.css",
-        "client.dfb518de.css",
-        "footer.31e3338b.css"
-      ],
-      "contact.svelte": [
-        "contact.5807720c.css",
-        "client.dfb518de.css",
-        "footer.31e3338b.css"
+        "practice.dfd4851b.css",
+        "client.539d9b21.css",
+        "footer.6b97b37b.css"
       ],
       "about.svelte": [
-        "about.e674863b.css",
-        "client.dfb518de.css"
+        "about.ada8ff6b.css",
+        "client.539d9b21.css"
       ]
     }
   }

@@ -46,6 +46,10 @@
     top: 5px;
     left: 5px;
   }
+
+  .sub-item {
+    color: rgb(65, 107, 176) !important;
+  }
   @media (max-width: 991.98px) {
   }
 
@@ -71,6 +75,57 @@
       <li class={pageIsActive.activePage == 'locations' ? 'uk-active' : ''}>
         <a href="locations">Locations</a>
       </li>
+      <!-- <li> -->
+      <li>
+        <a href="">Contact Us</a>
+        <div class="uk-navbar-dropdown">
+          <ul class="uk-nav uk-navbar-dropdown-nav">
+            <li>
+              <a class="sub-item" href="about">Our Team</a>
+            </li>
+            <li>
+              <a
+                class="sub-item"
+                href="https://www.facebook.com/DucanWalkerSchenkerDaakePCLLO/"
+                target="_blank">
+                Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <!-- <a
+          href="https://www.facebook.com/DucanWalkerSchenkerDaakePCLLO/"
+          target="_blank"
+          uk-icon="icon: facebook"
+          title="Facebook" /> -->
+      <!-- </li> -->
     </ul>
   </div>
 </nav>
+
+<!-- Mobile Nav-->
+{#if mobile}
+  <button
+    class="uk-button uk-button-default uk-margin-small-right"
+    type="button"
+    uk-toggle="target: #offcanvas-usage">
+    Open
+  </button>
+  <div id="offcanvas-usage" uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+
+      <button class="uk-offcanvas-close" type="button" uk-close />
+
+      <h3>Title</h3>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+
+    </div>
+  </div>
+{/if}
