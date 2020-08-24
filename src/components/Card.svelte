@@ -1,14 +1,8 @@
 <script>
-  import ContactModal from "./ContactModal.svelte";
   export let name;
   export let image;
   export let phone;
   export let email;
-  export let location;
-  export let linkedin;
-  export let facebook;
-  export let twitter;
-  export let instagram;
 </script>
 
 <style>
@@ -21,14 +15,29 @@
     max-width: 90vw;
   }
 
+  div > h4:hover {
+    color: rgb(170, 174, 214);
+  }
+
+  h4 {
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+  }
+
+  header {
+    cursor: pointer;
+  }
+  span {
+    margin-right: 0.1rem;
+  }
   .card-container {
-    width: 25%;
+    /* width: 30%; */
     display: inline-flexbox;
     border: 1px solid rgba(0, 0, 0, 0.08);
     justify-content: space-around;
     align-items: center;
-    margin: 2rem;
-    min-width: 250px;
+    margin: 1.5rem;
+    width: 259px;
     background-color: white;
   }
 
@@ -49,17 +58,10 @@
     padding: 1rem;
     text-align: left;
   }
-  div > h4:hover {
-    color: rgb(170, 174, 214);
-  }
 
-  h4 {
-    font-family: "Fira Sans", sans-serif;
-    text-align: center;
-  }
-
-  header {
-    cursor: pointer;
+  .view-more {
+    text-decoration: none;
+    font-style: italic;
   }
 </style>
 
@@ -74,28 +76,28 @@
     <div>
       <div class="details">
         <div>
-          <span uk-icon="icon: receiver" />
-          {phone}
+          {#if name == 'Patrick A. Duncan'}
+            <span uk-icon="icon: more-vertical" />
+            Of Counsel
+          {:else}
+            <span uk-icon="icon: receiver" title="Phone" />
+            {phone}
+          {/if}
         </div>
         <div>
-          <span uk-icon="icon: mail" />
-          <a href="mailto:{email}">{email}</a>
+          {#if name == 'Patrick A. Duncan'}
+            <span uk-icon="icon: more-vertical" />
+          {:else}
+            <span uk-icon="icon: mail" title="Email" />
+            <a href="mailto:{email}">{email}</a>
+          {/if}
         </div>
-        <div>Office Location: {location}</div>
-        <!-- <div>
-          {#if linkedin}
-            <a href={linkedin} target="_blank" uk-icon="icon: linkedin" />
-          {/if}
-          {#if facebook}
-            <a href={facebook} target="_blank" uk-icon="icon: facebook" />
-          {/if}
-          {#if twitter}
-            <a href={twitter} target="_blank" uk-icon="icon: twitter" />
-          {/if}
-          {#if instagram}
-            <a href={instagram} target="_blank" uk-icon="icon: instagram" />
-          {/if}
-        </div> -->
+        <div>
+          <span
+            uk-icon="icon: info"
+            title="View more information about {name}" />
+          <a class="view-more" on:click>View More</a>
+        </div>
       </div>
     </div>
   </div>

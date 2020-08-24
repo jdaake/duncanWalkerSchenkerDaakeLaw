@@ -27,15 +27,16 @@
   }
   .home-container {
     margin: auto;
-    max-width: 80vw;
+    width: 70vw;
+    padding-bottom: 3rem;
   }
 
   .uk-card {
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
   }
 
   .main-logo {
-    max-width: 600px;
+    max-width: 575px;
     height: auto;
     display: flex;
     margin: auto;
@@ -74,24 +75,31 @@
     uk-margin uk-box-shadow-medium"
     uk-grid>
     <div class="uk-card-media-left uk-cover-container">
-      <img src="./images/ladyjustice.jpg" alt="Lady Justice" uk-cover />
+      <img src="./images/farming.jpg" alt="Lady Justice" uk-cover />
       <canvas width="400" height="300" />
     </div>
     <div>
       <div class="uk-card-body">
         <h3 class="uk-card-title">Our Practice</h3>
         <p>
-          Duncan, Walker, Schenker & Daake, is a general law practice serving
-          individuals, families, farmers, banks, and small business in South
-          Central Nebraska.
+          Duncan, Walker, Schenker & Daake, P.C., L.L.O. represents individuals,
+          families, farmers, banks, and small businesses. With our extensive
+          experience, our practice has developed into a comprehensive law firm
+          handling an assortment of legal issues.
         </p>
         <p>
-          Our experience in law allows us to meet the often complex and
-          interdisciplinary needs of our communities
+          Our respective backgrounds allow us to meet the often complex and
+          interdisciplinary needs of our local citizens as a team. Our clients'
+          interests are at the heart of everything we do, and we place a strong
+          emphasis on professionalism in serving the needs of our fellow South
+          Central Nebraskans.
         </p>
-        <p>Our client's interest are at the heart of everything we do.</p>
+        <p>
+          We are grateful for our community, our clients, and friends and
+          welcome the opportunity to assist you with your particular situation.
+          Feel free to stop by or call to discuss your legal needs.
+        </p>
       </div>
     </div>
   </div>
 </div>
-<Footer />

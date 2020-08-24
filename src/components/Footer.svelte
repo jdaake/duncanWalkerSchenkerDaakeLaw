@@ -4,12 +4,12 @@
 
 <style>
   footer {
-    display: flex;
+    flex-shrink: 0;
     background-color: rgba(222, 220, 220, 0.3);
     padding: 1rem 0rem;
     width: 100vw;
     margin: auto;
-    border-top: 1px solid navy;
+    border-top: 1px solid rgb(65, 107, 176);
   }
 
   footer > p {
