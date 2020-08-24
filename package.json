@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "DWSD Law",
+  "description": "DWSD Law",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
