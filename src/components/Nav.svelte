@@ -90,6 +90,7 @@
   <a
     class="facebook-logo"
     href="https://www.facebook.com/DucanWalkerSchenkerDaakePCLLO/"
+    rel="noreferrer"
     target="_blank"
     title="Visit our Facebook page">
     <span uk-icon="icon: facebook" />
