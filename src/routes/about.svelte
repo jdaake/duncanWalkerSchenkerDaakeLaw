@@ -3,7 +3,6 @@
   import aboutData from "../stores/about-store";
   import { fade } from "svelte/transition";
   import Card from "../components/Card.svelte";
-  import Footer from "../components/Footer.svelte";
   import ContactModal from "../components/ContactModal.svelte";
   import navStore from "../stores/nav-store.js";
   // let attorneys;
