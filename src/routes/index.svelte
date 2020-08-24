@@ -75,7 +75,7 @@
     uk-margin uk-box-shadow-medium"
     uk-grid>
     <div class="uk-card-media-left uk-cover-container">
-      <img src="./images/farming.jpg" alt="Lady Justice" uk-cover />
+      <img src="./images/farming.jpg" alt="Farming" uk-cover />
       <canvas width="400" height="300" />
     </div>
     <div>

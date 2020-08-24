@@ -51,7 +51,7 @@
     uk-margin uk-box-shadow-medium"
     uk-grid>
     <div class="uk-card-media-left uk-cover-container">
-      <img src="./images/ladyjustice.jpg" alt="Lady Justice" uk-cover />
+      <img src="./images/ladyJustice.jpg" alt="Lady Justice" uk-cover />
       <canvas width="500" height="450" />
     </div>
     <div>
