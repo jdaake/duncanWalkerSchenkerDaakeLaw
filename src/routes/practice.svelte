@@ -1,7 +1,6 @@
 <script>
   import { onDestroy } from "svelte";
   import navStore from "../stores/nav-store.js";
-  import Footer from "../components/footer.svelte";
   import { fade } from "svelte/transition";
   let pageIsActive;
 
