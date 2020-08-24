@@ -4,7 +4,7 @@
   import LocationCard from "../components/LocationCard.svelte";
   import locationData from "../stores/locations-store.js";
   import navStore from "../stores/nav-store.js";
-  import Footer from "../components/footer.svelte";
+  // import Footer from "../components/footer.svelte";
   let pageIsActive;
   const unsubscribeNav = navStore.subscribe(activePage => {
     pageIsActive = activePage;
