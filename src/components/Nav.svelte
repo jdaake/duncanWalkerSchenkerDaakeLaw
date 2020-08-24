@@ -46,9 +46,10 @@
     top: 5px;
     left: 5px;
   }
-
-  .sub-item {
-    color: rgb(65, 107, 176) !important;
+  .facebook-logo {
+    position: fixed;
+    top: 25px;
+    right: 25px;
   }
   @media (max-width: 991.98px) {
   }
@@ -58,52 +59,42 @@
 </style>
 
 <nav class="uk-navbar-container" uk-navbar>
-  <a class="uk-navbar-item uk-logo" href="/">
+  <a class="uk-navbar-item uk-logo" href="/" title="Home">
     <img class="nav-logo" src="./images/logos/dwsd-logo.jpg" alt="DSWD Logo" />
   </a>
   <div class="uk-navbar-center uk-flex">
     <ul class="uk-navbar-nav">
-      <li class={pageIsActive.activePage == 'home' ? 'uk-active' : ''}>
+      <li
+        class={pageIsActive.activePage == 'home' ? 'uk-active' : ''}
+        title="Home">
         <a href="/">Home</a>
       </li>
-      <li class={pageIsActive.activePage == 'about' ? 'uk-active' : ''}>
+      <li
+        class={pageIsActive.activePage == 'about' ? 'uk-active' : ''}
+        title="View our Team">
         <a href="about">About</a>
       </li>
-      <li class={pageIsActive.activePage == 'practice' ? 'uk-active' : ''}>
+      <li
+        class={pageIsActive.activePage == 'practice' ? 'uk-active' : ''}
+        title="View our Areas of Practices">
         <a href="practice">Areas of Practice</a>
       </li>
-      <li class={pageIsActive.activePage == 'locations' ? 'uk-active' : ''}>
+      <li
+        class={pageIsActive.activePage == 'locations' ? 'uk-active' : ''}
+        title="View our Locations">
         <a href="locations">Locations</a>
       </li>
-      <!-- <li> -->
-      <li>
-        <a href="">Contact Us</a>
-        <div class="uk-navbar-dropdown">
-          <ul class="uk-nav uk-navbar-dropdown-nav">
-            <li>
-              <a class="sub-item" href="about">Our Team</a>
-            </li>
-            <li>
-              <a
-                class="sub-item"
-                href="https://www.facebook.com/DucanWalkerSchenkerDaakePCLLO/"
-                target="_blank">
-                Facebook
-              </a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- <a
-          href="https://www.facebook.com/DucanWalkerSchenkerDaakePCLLO/"
-          target="_blank"
-          uk-icon="icon: facebook"
-          title="Facebook" /> -->
-      <!-- </li> -->
     </ul>
-  </div>
-</nav>
 
+  </div>
+  <a
+    class="facebook-logo"
+    href="https://www.facebook.com/DucanWalkerSchenkerDaakePCLLO/"
+    target="_blank"
+    title="Visit our Facebook page">
+    <span uk-icon="icon: facebook" />
+  </a>
+</nav>
 <!-- Mobile Nav-->
 {#if mobile}
   <button
