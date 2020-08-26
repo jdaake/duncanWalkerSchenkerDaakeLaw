@@ -17,6 +17,10 @@
       unsubscribeNav();
     }
   });
+
+  function closeSideNav() {
+    UIkit.offcanvas("#mobile-sidenav").hide();
+  }
 </script>
 
 <style>
@@ -55,9 +59,6 @@
     visibility: hidden;
   }
 
-  @media (max-width: 991.98px) {
-  }
-
   @media (max-width: 660px) {
     .main-nav {
       display: none !important;
@@ -79,10 +80,10 @@
       color: white;
     }
     .nav-logo {
-      max-width: 30px;
+      max-width: 40px;
       position: fixed;
-      top: 11px;
-      left: 90%;
+      top: 5px;
+      left: 87%;
     }
   }
 </style>
@@ -129,7 +130,7 @@
   <div>
     <span
       uk-icon="icon: menu"
-      uk-toggle="target: #offcanvas-slide"
+      uk-toggle="target: #mobile-sidenav"
       ratio="2"
       class="menu-icon" />
     <a class="" href="/" title="Home">
@@ -139,34 +140,35 @@
         alt="DSWD Logo" />
     </a>
   </div>
-  <div id="offcanvas-slide" uk-offcanvas>
+  <div id="mobile-sidenav" uk-offcanvas>
     <div class="uk-offcanvas-bar">
       <ul class="uk-nav uk-nav-default">
         <li
           class={pageIsActive.activePage == 'home' ? 'uk-active' : ''}
           title="Home">
-          <a href="/">Home</a>
+          <a href="/" on:click={closeSideNav}>Home</a>
         </li>
         <li
           class={pageIsActive.activePage == 'about' ? 'uk-active' : ''}
           title="View our Team">
-          <a href="about">About</a>
+          <a href="about" on:click={closeSideNav}>About</a>
         </li>
         <li
           class={pageIsActive.activePage == 'practice' ? 'uk-active' : ''}
           title="View our Areas of Practices">
-          <a href="practice">Areas of Practice</a>
+          <a href="practice" on:click={closeSideNav}>Areas of Practice</a>
         </li>
         <li
           class={pageIsActive.activePage == 'locations' ? 'uk-active' : ''}
           title="View our Locations">
-          <a href="locations">Locations</a>
+          <a href="locations" on:click={closeSideNav}>Locations</a>
         </li>
         <li>
           <a
             href="https://www.facebook.com/DucanWalkerSchenkerDaakePCLLO/"
             target="_blank"
-            title="Visit our Facebook page">
+            title="Visit our Facebook page"
+            on:click={closeSideNav}>
             <span uk-icon="icon: facebook" />
           </a>
         </li>

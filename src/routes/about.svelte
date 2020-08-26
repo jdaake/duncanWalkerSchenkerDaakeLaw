@@ -57,6 +57,13 @@
     text-align: center;
     font-family: "Fira Sans", sans-serif;
   }
+
+  @media (max-width: 660px) {
+    .header-container {
+      padding-top: 0rem;
+      text-align: center;
+    }
+  }
 </style>
 
 <svelte:head>
