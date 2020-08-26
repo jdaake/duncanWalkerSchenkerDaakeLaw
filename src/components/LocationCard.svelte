@@ -27,6 +27,12 @@
   .uk-card {
     margin: 1rem;
   }
+  @media (max-width: 660px) {
+    canvas {
+      width: 352px !important;
+      height: 200px !important;
+    }
+  }
 </style>
 
 <!-- <section> -->
