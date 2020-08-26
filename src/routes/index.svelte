@@ -24,6 +24,7 @@
   p {
     font-family: "Fira Sans", sans-serif;
   }
+
   .home-container {
     margin: auto;
     width: 70vw;
@@ -42,20 +43,27 @@
   }
 
   @media (max-width: 991.98px) {
+    .home-container {
+      margin-top: 2.5rem;
+      width: 90vw;
+      padding-bottom: 2rem;
+    }
     .main-logo {
-      max-width: 400px;
-      height: auto;
-      display: flex;
-      margin: auto;
+      max-width: 450px;
     }
   }
 
-  @media (max-width: 578.98px) {
+  @media (max-width: 660px) {
+    h3 {
+      text-align: center;
+    }
+    .home-container {
+      margin-top: -2rem;
+      padding-bottom: 1rem;
+      width: 90vw;
+    }
     .main-logo {
-      max-width: 250px;
-      height: auto;
-      display: flex;
-      margin: auto;
+      max-width: 325px;
     }
   }
 </style>

@@ -30,6 +30,20 @@
     max-width: 90vw;
     padding: 1rem 0rem;
   }
+
+  @media (max-width: 991.98px) {
+    .locations-container {
+      margin-top: 2rem;
+      max-width: 90vw;
+    }
+  }
+  @media (max-width: 660px) {
+    .locations-container {
+      max-width: 90vw;
+      margin-top: -2rem;
+      padding-bottom: 1rem;
+    }
+  }
 </style>
 
 <svelte:head>

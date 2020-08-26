@@ -36,6 +36,26 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+
+  @media (max-width: 991.98px) {
+    .practice-container {
+      margin: auto;
+      max-width: 90vw;
+      margin-top: 2rem;
+      padding-bottom: 1rem;
+    }
+  }
+  @media (max-width: 660px) {
+    h3,
+    p {
+      text-align: center;
+    }
+    .practice-container {
+      margin: auto;
+      max-width: 90vw;
+      padding-top: 0rem;
+    }
+  }
 </style>
 
 <svelte:head>
