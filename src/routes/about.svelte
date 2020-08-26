@@ -58,10 +58,19 @@
     font-family: "Fira Sans", sans-serif;
   }
 
+  @media (max-width: 991.98px) {
+    .header-container {
+      margin-top: 2rem;
+      text-align: center;
+      width: 90vw;
+    }
+  }
   @media (max-width: 660px) {
     .header-container {
       padding-top: 0rem;
+      margin-top: -1rem;
       text-align: center;
+      width: 90vw;
     }
   }
 </style>
