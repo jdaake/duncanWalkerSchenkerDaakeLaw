@@ -57,7 +57,10 @@
           View on Map
         </a>
         <hr />
-        <div>Phone: {phone}</div>
+        <div>
+          Phone:
+          <a href="tel:{phone}">{phone}</a>
+        </div>
         <div>Fax: {fax}</div>
       </div>
     </div>

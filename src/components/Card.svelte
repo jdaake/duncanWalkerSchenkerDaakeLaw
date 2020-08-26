@@ -81,7 +81,7 @@
             Of Counsel
           {:else}
             <span uk-icon="icon: receiver" title="Phone" />
-            {phone}
+            <a href="tel:{phone}">{phone}</a>
           {/if}
         </div>
         <div>
