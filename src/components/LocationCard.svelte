@@ -33,6 +33,31 @@
       height: 200px !important;
     }
   }
+
+  @media (max-width: 568px) {
+    canvas {
+      width: 230px !important;
+      height: 200px !important;
+    }
+  }
+  @media (max-width: 414px) {
+    canvas {
+      width: 350px !important;
+      height: 200px !important;
+    }
+  }
+  @media (max-width: 375px) {
+    canvas {
+      width: 310px !important;
+      height: 200px !important;
+    }
+  }
+  @media (max-width: 320px) {
+    canvas {
+      width: 255px !important;
+      height: 200px !important;
+    }
+  }
 </style>
 
 <!-- <section> -->

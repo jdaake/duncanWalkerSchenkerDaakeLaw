@@ -65,12 +65,47 @@
       width: 90vw;
     }
   }
-  @media (max-width: 660px) {
+
+  @media (max-width: 768px) {
     .header-container {
-      padding-top: 0rem;
-      margin-top: -1rem;
+      margin-top: -2rem;
+    }
+  }
+
+  @media (max-width: 740px) {
+    .header-container {
+      margin-top: 2rem;
+    }
+  }
+
+  @media (max-width: 667px) {
+    .header-container {
+      margin-top: 2rem;
       text-align: center;
       width: 90vw;
+    }
+  }
+
+  @media (max-width: 569px) {
+    .header-container {
+      margin-top: 1.5rem;
+      width: 80vw;
+    }
+  }
+  @media (max-width: 414px) {
+    .header-container {
+      margin-top: -2rem;
+    }
+  }
+  @media (max-width: 375px) {
+    .header-container {
+      margin-top: -3rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .header-container {
+      margin-top: 0rem;
     }
   }
 </style>
