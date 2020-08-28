@@ -122,7 +122,7 @@
     target="_blank"
     rel="noreferrer"
     title="Visit our Facebook page">
-    <span uk-icon="icon: facebook" />
+    <span uk-icon="icon: facebook" ratio="1.3" />
   </a>
 </nav>
 

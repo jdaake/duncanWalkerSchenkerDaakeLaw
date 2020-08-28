@@ -27,7 +27,7 @@
 
   .home-container {
     margin: auto;
-    width: 70vw;
+    width: 80vw;
     padding-bottom: 3rem;
   }
 
