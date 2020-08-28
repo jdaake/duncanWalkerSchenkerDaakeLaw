@@ -110,7 +110,7 @@
 </style>
 
 <svelte:head>
-  <title>Duncan, Walker, Schenker, & Daake</title>
+  <title>Duncan, Walker, Schenker, & Daake, PC, LLO</title>
 </svelte:head>
 
 <div class="home-container" in:fade={{ duration: 400, delay: 100 }}>
@@ -123,7 +123,7 @@
     uk-margin uk-box-shadow-medium"
     uk-grid>
     <div class="uk-card-media-left uk-cover-container">
-      <img src="./images/farming.jpg" alt="Farming" uk-cover />
+      <img src="./images/farmingSmall.jpg" alt="Farming" uk-cover />
       <canvas width="400" height="300" />
     </div>
     <div>

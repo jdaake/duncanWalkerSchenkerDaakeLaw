@@ -120,6 +120,7 @@
     class="facebook-logo"
     href="https://www.facebook.com/DucanWalkerSchenkerDaakePCLLO/"
     target="_blank"
+    rel="noreferrer"
     title="Visit our Facebook page">
     <span uk-icon="icon: facebook" />
   </a>
@@ -168,6 +169,7 @@
             href="https://www.facebook.com/DucanWalkerSchenkerDaakePCLLO/"
             target="_blank"
             title="Visit our Facebook page"
+            rel="noreferrer"
             on:click={closeSideNav}>
             <span uk-icon="icon: facebook" />
           </a>
